@@ -1,0 +1,19 @@
+<resources>
+    <color name="green_main">#526B52</color>
+    <color name="green_dark">#3A4C3A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="page_background">#F7F5EE</color>
+    <color name="card_surface">#FFFFFF</color>
+    <color name="soft_green">#E2E9DC</color>
+    <color name="soft_green_border">#C5D3BF</color>
+    <color name="soft_peach">#F3E8DA</color>
+    <color name="text_primary">#2D352E</color>
+    <color name="text_secondary">#6E766B</color>
+    <color name="text_hint">#9E9E96</color>
+    <color name="outline_soft">#E2E5DA</color>
+    <color name="rating_gold">#DDA136</color>
+    <color name="delete_text">#A35F50</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <bool name="light_system_bars">true</bool>
+</resources>

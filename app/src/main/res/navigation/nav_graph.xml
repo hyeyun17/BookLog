@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.booklog.ui.home.HomeFragment"
+        android:label="홈" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.booklog.ui.search.SearchFragment"
+        android:label="검색" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.booklog.ui.map.MapFragment"
+        android:label="지도" />
+
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.booklog.ui.library.LibraryFragment"
+        android:label="라이브러리" />
+
+    <fragment
+        android:id="@+id/timelineFragment"
+        android:name="com.example.booklog.ui.timeline.TimelineFragment"
+        android:label="타임라인" />
+
+    <fragment
+        android:id="@+id/reviewDetailFragment"
+        android:name="com.example.booklog.ui.review.ReviewDetailFragment"
+        android:label="독후감" />
+
+    <fragment
+        android:id="@+id/reviewWriteFragment"
+        android:name="com.example.booklog.ui.review.ReviewWriteFragment"
+        android:label="독후감 쓰기" />
+
+</navigation>

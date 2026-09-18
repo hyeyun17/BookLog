@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="104dp" android:height="108dp" android:viewportWidth="104" android:viewportHeight="108">
+    <path android:fillColor="@color/soft_green" android:pathData="M52,6A43,43 0,1 1,52,92A43,43 0,1 1,52,6" />
+    <path android:fillColor="@color/green_main" android:pathData="M20,75L79,75Q84,75 84,80L84,87Q84,92 79,92L20,92Q15,92 15,87L15,80Q15,75 20,75" />
+    <path android:fillColor="@color/card_surface" android:pathData="M24,79L79,79L79,87L24,87Z" />
+    <path android:fillColor="@color/rating_gold" android:pathData="M27,58L84,58Q88,58 88,62L88,71Q88,75 84,75L27,75Z" />
+    <path android:fillColor="@color/card_surface" android:pathData="M34,62L84,62L84,71L34,71Z" />
+    <path android:fillColor="@color/green_main" android:pathData="M25,26L42,20L53,55L36,61Z" />
+    <path android:fillColor="@color/card_surface" android:pathData="M29,28L38,25L47,53L38,56Z" />
+    <path android:fillColor="@color/rating_gold" android:pathData="M63,19C62,32 70,36 73,42C74,29 74,23 63,19Z" />
+    <path android:fillColor="@color/green_main" android:pathData="M84,27C73,29 69,39 69,50C82,46 86,38 84,27Z" />
+</vector>

@@ -1,0 +1,126 @@
+<resources>
+    <style name="Base.Theme.BookLog" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/green_main</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/soft_green</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+
+        <!-- Secondary & Containers (Fixes M3 default light purple!) -->
+        <item name="colorSecondary">@color/green_main</item>
+        <item name="colorOnSecondary">@color/on_primary</item>
+        <item name="colorSecondaryContainer">@color/soft_green</item>
+        <item name="colorOnSecondaryContainer">@color/text_primary</item>
+
+        <!-- Tertiary -->
+        <item name="colorTertiary">@color/rating_gold</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Surface & Background -->
+        <item name="colorSurface">@color/card_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/page_background</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorSurfaceContainer">@color/card_surface</item>
+        <item name="colorSurfaceContainerLow">@color/page_background</item>
+        <item name="colorSurfaceContainerHigh">@color/card_surface</item>
+        <item name="colorOutline">@color/outline_soft</item>
+
+        <item name="android:colorBackground">@color/page_background</item>
+        <item name="android:windowBackground">@color/page_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Status Bar & Navigation Bar -->
+        <item name="android:statusBarColor">@color/green_main</item>
+        <item name="android:navigationBarColor">@color/bottom_nav_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">@bool/light_system_bars</item>
+
+        <!-- Widget Styles -->
+        <item name="materialButtonStyle">@style/Widget.BookLog.Button</item>
+        <item name="android:editTextStyle">@style/Widget.BookLog.Input</item>
+        <item name="bottomNavigationStyle">@style/Widget.BookLog.BottomNav</item>
+    </style>
+
+    <style name="Theme.BookLog" parent="Base.Theme.BookLog" />
+
+    <!-- Bottom Navigation Style -->
+    <style name="Widget.BookLog.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/bottom_nav_bg</item>
+        <item name="itemIconTint">@color/nav_item</item>
+        <item name="itemTextColor">@color/nav_item</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.BookLog.BottomNav.ActiveIndicator</item>
+        <item name="itemRippleColor">@color/soft_green</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Active Indicator Pill for Bottom Nav (soft khaki pill) -->
+    <style name="Widget.BookLog.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/soft_green</item>
+        <item name="android:width">56dp</item>
+        <item name="android:height">32dp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.BookLog.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/green_main</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="Widget.BookLog.Button.Secondary" parent="Widget.BookLog.Button">
+        <item name="backgroundTint">@color/soft_green</item>
+        <item name="android:textColor">@color/green_main</item>
+        <item name="android:elevation">0dp</item>
+        <item name="strokeColor">@color/soft_green_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.BookLog.Button.Danger" parent="Widget.BookLog.Button">
+        <item name="backgroundTint">#FDF2F0</item>
+        <item name="android:textColor">@color/delete_text</item>
+        <item name="android:elevation">0dp</item>
+        <item name="strokeColor">#F5C6CB</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Input Styles -->
+    <style name="Widget.BookLog.Input" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <!-- Typography Styles -->
+    <style name="Text.BookLog.Heading" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.BookLog.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="Text.BookLog.Label" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>
